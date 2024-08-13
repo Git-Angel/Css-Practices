@@ -1,0 +1,137 @@
+h2{
+   text-decoration: solid; 
+   font-style: initial;
+}
+.method{
+    font-style: italic;
+}
+/*Id is denoted by #*/
+#apply{
+    color: aqua;
+}
+input[type = "text"]{
+    color: rgb(69, 165, 42);
+}
+input[placeholder]{
+    font-style: italic;
+}
+.list container{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.list container:hover{
+    border: 1px solid red;
+}
+
+.quote{
+    position: relative;
+    margin: 20px 0;
+    font-style: italic;
+}
+.quote::before{
+    content: "'";
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+}
+.quote::before{
+    color: #008000;
+}
+/*attribute selector*/
+
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+/*attribute value selector*/
+
+input[type= "password"]{
+    background-color: lightseagreen;
+}
+
+input[type= "text"]{
+    background-color: lightgreen;}
+
+    /*pseudo hover :*/
+
+    button{
+        background-color: blue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: red;
+        border: 1px solid blue;
+        color: aliceblue;
+    }
+
+    /*nth child */
+
+    li:nth-child(1){
+        background-color: aqua;
+    }
+
+    li:nth-child(2n){
+        background-color: rgb(0, 255, 217);
+    }
+    li:nth-child(3){
+        background-color: palevioletred;
+    }
+    li:nth-child(even){
+        background-color: rgb(216, 188, 112);
+    }
+    li:nth-child(odd){
+        background-color: rgb(112, 166, 216);
+    }
+
+    /*Styling Pseudo element*/
+    /*Do not add spacing.*/
+h5::before{
+    content:"😎📗";
+    font-size: 1.5em;
+}
+
+h5::after{
+content:"🎃🤣🤼‍♂️";
+font-size: 1.5em;
+color: #008000;
+}
+
+/*css specificity*/
+
+h6{
+    color: aqua;
+}
+
+.Introduction{
+    color: brown;
+}
+
+#Introduce{
+    color: darkgoldenrod;
+}
+
+/*Random*/
+
+span::before{
+ content: " ' ";
+ font-size: 1.5em;
+ font-weight: bold;
+ color: blueviolet;
+}
+
+span::after{
+    content: " ' ";
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+   }
